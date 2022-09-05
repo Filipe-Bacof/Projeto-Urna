@@ -11,3 +11,11 @@ presidente 2 numeros
 
 jsdoc.org
 */
+
+const leoMeAjudouParaCaralho = () => {
+    let obrigado = "valeu mesmo";
+    obrigado += ", de coração";
+    console.log(obrigado);
+}
+
+leoMeAjudouParaCaralho();
