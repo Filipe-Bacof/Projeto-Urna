@@ -13,7 +13,7 @@ let etapas = [
         numeros: 4,
         candidatos: [
             {
-                numero: 1111,
+                numero: '1111',
                 nome: 'Bolsonaro',
                 partido: 'BB',
                 fotos: [
@@ -21,7 +21,7 @@ let etapas = [
                 ],
             },
             {
-                numero: 2222,
+                numero: '2222',
                 nome: 'Lula',
                 partido: 'LL',
                 fotos: [
@@ -35,7 +35,7 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: 11111,
+                numero: '11111',
                 nome: 'Bolsonaro',
                 partido: 'BB',
                 fotos: [
@@ -43,7 +43,7 @@ let etapas = [
                 ],
             },
             {
-                numero: 22222,
+                numero: '22222',
                 nome: 'Lula',
                 partido: 'LL',
                 fotos: [
@@ -57,7 +57,7 @@ let etapas = [
         numeros: 3,
         candidatos: [
             {
-                numero: 111,
+                numero: '111',
                 nome: 'Bolsonaro',
                 partido: 'BB',
                 fotos: [
@@ -65,7 +65,7 @@ let etapas = [
                 ],
             },
             {
-                numero: 222,
+                numero: '222',
                 nome: 'Lula',
                 partido: 'LL',
                 fotos: [
@@ -79,7 +79,7 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: 11,
+                numero: '11',
                 nome: 'Bolsonaro',
                 partido: 'BB',
                 fotos: [
@@ -87,7 +87,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 22,
+                numero: '22',
                 nome: 'Lula',
                 partido: 'LL',
                 fotos: [
@@ -101,7 +101,7 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: 22,
+                numero: '22',
                 nome: 'Jair Bolsonaro',
                 partido: 'PSL',
                 vice: 'Nicolas Cage',
@@ -111,7 +111,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 13,
+                numero: '13',
                 nome: 'LULA',
                 partido: 'PT',
                 vice: 'Nicolas Cage',
@@ -121,7 +121,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 00,
+                numero: '00',
                 nome: 'Nicolas Cage',
                 partido: 'NCAGE',
                 vice: 'Nicolas Cage',
