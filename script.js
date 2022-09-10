@@ -84,7 +84,7 @@ function branco() {
         aviso.style.display = 'block';
         numeros.innerHTML = '';
         descricao.innerHTML = `<div class="aviso--grande pisca">VOTO EM BRANCO</div>`
-
+        lateral.innerHTML = '';
     }
 }
 
@@ -93,7 +93,12 @@ function corrige() {
 }
 
 function confirma() {
-    console.log ('clicou em confirma');
+    let etapa = etapas[etapaAtual];
+    if (votoBranco === true) {
+        console.log('confirmando como BRANCO');
+    } else if (numero.length === etapa.numeros) {
+        console.log('confirmando como '+numero);
+    }
 }
 
 comecarEtapa()
