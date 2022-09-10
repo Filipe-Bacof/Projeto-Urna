@@ -107,7 +107,7 @@ let etapas = [
                 vice: 'Nicolas Cage',
                 fotos: [
                     { url: 'Fotos Presidentes/22_jair_bolsonaro.jpg', legenda: 'presidente' },
-                    { url: 'Fotos Presidentes/nicolas_cage_1.jpg', legenda: 'vice-presidente', small: true }
+                    { url: 'Fotos Presidentes/nicolas_cage_1.png', legenda: 'vice-presidente', small: true }
                 ]
             },
             {
@@ -117,7 +117,7 @@ let etapas = [
                 vice: 'Nicolas Cage',
                 fotos: [
                     { url: 'Fotos Presidentes/13_luis_inacio_lula_da_silva.jpg', legenda: 'presidente' },
-                    { url: 'Fotos Presidentes/nicolas_cage_2.jpg', legenda: 'vice-presidente', small: true }
+                    { url: 'Fotos Presidentes/nicolas_cage_2.png', legenda: 'vice-presidente', small: true }
                 ]
             },
             {
@@ -126,8 +126,8 @@ let etapas = [
                 partido: 'NCAGE',
                 vice: 'Nicolas Cage',
                 fotos: [
-                    { url: 'Fotos Presidentes/nicolas_cage_1.jpg', legenda: 'presidente' },
-                    { url: 'Fotos Presidentes/nicolas_cage_2.jpg', legenda: 'vice-presidente', small: true }
+                    { url: 'Fotos Presidentes/nicolas_cage_1.png', legenda: 'presidente' },
+                    { url: 'Fotos Presidentes/nicolas_cage_2.png', legenda: 'vice-presidente', small: true }
                 ]
             }
         ]

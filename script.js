@@ -16,6 +16,8 @@ let etapaAtual = 0;
 let numero = '';
 let votoBranco = false;
 
+let votos = [];
+
 function comecarEtapa() {
     let etapa = etapas[etapaAtual];
     let numeroHTML = '';
@@ -53,7 +55,11 @@ function atualizaInterface() {
         descricao.innerHTML = `Nome: ${candidato.nome}<br/>Partido: ${candidato.partido}`;
         let fotosHTML = '';
         for(let i in candidato.fotos) {
-            fotosHTML += `<div class="foto-candidato"><img src="${candidato.fotos[i].url}" alt="Candidato"/>${candidato.fotos[i].legenda}</div>`
+            if (candidato.fotos[i].small) {
+                fotosHTML += `<div class="foto-candidato small"><img src="${candidato.fotos[i].url}" alt="Candidato"/>${candidato.fotos[i].legenda}</div>`;
+            } else {
+                fotosHTML += `<div class="foto-candidato"><img src="${candidato.fotos[i].url}" alt="Candidato"/>${candidato.fotos[i].legenda}</div>`;
+            }
         }
         lateral.innerHTML = fotosHTML;
     } else {
@@ -79,7 +85,7 @@ function clicou(n) {
 
 function branco() {
     if(numero === '') {
-        votoBranco === true;
+        votoBranco = true;
         seuVotoPara.style.display = 'block';
         aviso.style.display = 'block';
         numeros.innerHTML = '';
@@ -94,10 +100,36 @@ function corrige() {
 
 function confirma() {
     let etapa = etapas[etapaAtual];
+    let votoConfirmado = false;
     if (votoBranco === true) {
+        votoConfirmado = true;
         console.log('confirmando como BRANCO');
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: 'branco'
+        });
     } else if (numero.length === etapa.numeros) {
+        votoConfirmado = true;
         console.log('confirmando como '+numero);
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: numero
+        });
+    }
+    if (votoConfirmado) {
+        etapaAtual++;
+        if (etapas[etapaAtual] !== undefined) {
+            comecarEtapa();
+        } else {
+            console.log('finalizando voto!');
+            console.log(votos);
+            seuVotoPara.style.display = 'none';
+            cargo.innerHTML = '';
+            aviso.style.display = 'none';
+            lateral.innerHTML = '';
+            numeros.innerHTML = '';
+            descricao.innerHTML = `<div class="aviso--grande pisca">FIM!</div>`
+        }
     }
 }
 
